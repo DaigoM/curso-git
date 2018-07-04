@@ -1,0 +1,60 @@
+Comando Git
+
+ - git clone [url]
+Faz cópia do projeto que está na url indicada e colocar na máquina atual.
+
+ - git checkout [versão]
+Recupera os arquivos do projeto naquela versão indicada e coloca na máquina atual.
+
+ - git diff [versão] [outra versão]
+Exibi a diferença de cada linha entre os arquivos das versões indicadas.
+
+ - git blame [nome]
+Mostra quem fez a alteração de cada linha do arquivo.
+Para sair, apertar a tecla "q".
+
+ - git tag
+Mostra quantas versões do projeto existem.
+
+ - git init
+Transforma a pasta atual em um repositório git.
+
+ - git ls-files
+Verifica os arquivos que estão sendo controlados por git
+
+ - git status
+Mostra o estado atual do nosso respositório. Se existe arquivos que não estão 
+sendo rastreando(untracked), se existe arquivos com alterações que precisam de ser enviadas(commit).
+
+ - git add [arquivo.extensão | nome dos arquivos separados por expaço | nome do diretório ]
+Inicia monitorar o arquivo indicado ou arquivos modificados.
+
+Existe modo interativo do comando:
+git add -i
+
+ - git commit -m "[mensagem]"
+Gravar as alterações no repositório.
+"-m" significa a mensagem da alteração, explicando que tipo de alterações foram feitas.
+"-a" sifnifica que serão enviadas todas as alterações e arquivos deletados, porém não adiciona arquivos novos.
+
+ - git config --global user.name "[seu nome]"
+Configura para colocar seus créditos nas ações feitas por você. 
+
+ - git config --global user.email "[seu.email@exemplo.com]"
+
+ - git log 
+Mostra todos os commits feitos, com suas respectivas mensagens.
+
+ - git whatchanged  -p
+É o mesmo que "git log", mas mostra também quais arquivos foram alterados.
+"-p" significa mostrar alterações que foram feitas nos arquivos detalhadamente.
+
+ - git remote
+Mostra quais repositórios remotos esse repositório local tem.
+
+ - git remote add origin [url]
+Adiciona o projeto raíz do repositório, "origin" é meio que um apelido.
+
+  -git push [nome do repositório remoto] master
+Manda nossas alterações no repositório remoto.
+"master" significa colocar o projeto na ramificação principal.
